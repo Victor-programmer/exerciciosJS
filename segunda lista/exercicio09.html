@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 9</h1>
+    <script>
+        var s = parseFloat(prompt('Digite o saldo (use ponto ou vírgula):').replace(',','.'));
+        if(isNaN(s)) alert('Entrada inválida');
+        else{
+            var reaj = s * 1.015; alert('Saldo com reajuste de 1.5%: R$ '+reaj.toFixed(2)); document.body.innerHTML += '<p>Saldo com reajuste de 1.5%: R$ '+reaj.toFixed(2)+'</p>'
+        }
+    </script>
+</body>
+</html>
+

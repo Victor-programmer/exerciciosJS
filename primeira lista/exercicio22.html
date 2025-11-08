@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 22</h1>
+<script>
+        let sal = String(prompt("Digite o salario : "))
+        let salari = sal.replace(",",".")
+        let salario = parseFloat(salari)
+        if(salario > 2000){
+            let bonus = (salario*10)/100
+            alert("Você recebeu um bonus de " + bonus.toFixed(2) + " (10%) então ficara "+(salario+bonus).toFixed(2)+" reais")
+        }else if(salario < 2000){
+            let bonusM = (salario*5)/100
+            alert("Você recebeu um bonus de " + bonusM.toFixed(2) + " (5%) então ficara "+(salario+bonusM).toFixed(2)+" reais")
+
+        }
+    </script>
+</body>
+</html>

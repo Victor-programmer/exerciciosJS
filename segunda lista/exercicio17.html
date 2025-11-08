@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 17</title>
+</head>
+<body>
+    <style>
+        *{margin-left: 15%; font-family: Arial, Helvetica, sans-serif;}
+    </style>
+    <h1>EXERCÍCIO 17</h1>
+    <script>
+        var cont = 0;
+        for (var i = 1; i <= 20; i++) {
+            var x = parseInt(prompt('Digite a idade da ' + i + 'ª pessoa:'));
+            if (isNaN(x)) {
+                alert('Entrada inválida');
+                break;
+            }
+            if (x >= 18) cont++;
+        }
+        if (!isNaN(cont)) {
+            alert('Quantidade de maiores de idade: ' + cont);
+            document.body.innerHTML += '<p>Quantidade de maiores de idade: ' + cont + '</p>';
+        }
+    </script>
+</body>
+</html>

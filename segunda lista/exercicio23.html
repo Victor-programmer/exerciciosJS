@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 23</title>
+</head>
+<body>
+    <style>
+        *{margin-left: 15%; font-family: Arial, Helvetica, sans-serif;}
+    </style>
+    <h1>EXERCÍCIO 23</h1>
+    <script>
+        var positivos = 0;
+        var negativos = 0;
+        var zeros = 0;
+        for (var i = 1; i <= 20; i++) {
+            var n = parseFloat(prompt('Digite o ' + i + 'º número:').replace(',','.'));
+            if (isNaN(n)) {
+                alert('Entrada inválida');
+                break;
+            }
+            if (n > 0) positivos++;
+            else if (n < 0) negativos++;
+            else zeros++;
+        }
+        if (!isNaN(positivos)) {
+            alert('Positivos: ' + positivos + '\nNegativos: ' + negativos + '\nZeros: ' + zeros);
+            document.body.innerHTML += '<p>Positivos: ' + positivos + '</p><p>Negativos: ' + negativos + '</p><p>Zeros: ' + zeros + '</p>';
+        }
+    </script>
+</body>
+</html>

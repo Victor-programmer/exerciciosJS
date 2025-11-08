@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22</title>
+</head>
+<body>
+    <style>
+        *{margin-left: 15%; font-family: Arial, Helvetica, sans-serif;}
+    </style>
+    <h1>EXERCÍCIO 22</h1>
+    <script>
+        var cont = 0;
+        for (var i = 1; i <= 20; i++) {
+            var x = parseFloat(prompt('Digite o ' + i + 'º número:').replace(',','.'));
+            if (isNaN(x)) {
+                alert('Entrada inválida');
+                break;
+            }
+            if (x >= 0 && x <= 100) cont++;
+        }
+        if (!isNaN(cont)) {
+            alert('Quantidade entre 0 e 100: ' + cont);
+            document.body.innerHTML += '<p>Quantidade entre 0 e 100: ' + cont + '</p>';
+        }
+    </script>
+</body>
+</html>

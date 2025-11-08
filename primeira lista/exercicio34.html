@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 34</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 34</h1>
+    <script>
+    let idade = prompt("Digite sua idade:");
+    idade = parseInt(idade);
+
+    if (idade >= 18 && idade <= 70) {
+        alert("Você é obrigado(a) a votar.");
+    } else if ((idade >= 16 && idade < 18) || idade > 70) {
+        alert("O voto é facultativo para você.");
+    } else {
+        alert("Você não pode votar ainda.");
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19</title>
+</head>
+<body>
+    <style>
+        *{margin-left: 15%; font-family: Arial, Helvetica, sans-serif;}
+    </style>
+    <h1>EXERCÍCIO 19</h1>
+    <script>
+        var cot = parseFloat(prompt('Digite a cotação do dólar (R$):').replace(',','.'));
+        var qtd = parseFloat(prompt('Digite a quantidade de dólares:').replace(',','.'));
+        if (isNaN(cot) || isNaN(qtd)) {
+            alert('Entrada inválida');
+        } else {
+            var total = cot * qtd;
+            alert('Valor em reais: R$ ' + total.toFixed(2));
+            document.body.innerHTML += '<p>Valor em reais: R$ ' + total.toFixed(2) + '</p>';
+        }
+    </script>
+</body>
+</html>

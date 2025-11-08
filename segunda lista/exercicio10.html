@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 10</h1>
+    <script>
+        var nome=prompt('Nome do vendedor:');
+        var sal=parseFloat(prompt('Salário fixo (use ponto ou vírgula):').replace(',','.'));
+        var vendas=parseFloat(prompt('Total de vendas no mês (em dinheiro):').replace(',','.'));
+        if(!nome||isNaN(sal)||isNaN(vendas))alert('Entrada inválida');
+        else{
+            var com = vendas*0.15; var final = sal + com; alert('Nome: '+nome+'\nSalário fixo: R$ '+sal.toFixed(2)+'\nSalário final: R$ '+final.toFixed(2)); document.body.innerHTML += '<p>Nome: '+nome+'</p><p>Salário fixo: R$ '+sal.toFixed(2)+'</p><p>Salário final: R$ '+final.toFixed(2)+'</p>'
+        }
+    </script>
+</body>
+</html>
+

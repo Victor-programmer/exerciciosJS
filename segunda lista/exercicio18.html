@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 18</title>
+</head>
+<body>
+    <style>
+        *{margin-left: 15%; font-family: Arial, Helvetica, sans-serif;}
+    </style>
+    <h1>EXERCÍCIO 18</h1>
+    <script>
+        var menorIdade = 9999;
+        var nomeMenor = '';
+        for (var i = 1; i <= 10; i++) {
+            var n = prompt('Digite o nome da ' + i + 'ª pessoa:');
+            var id = parseInt(prompt('Digite a idade de ' + n + ':'));
+            if (!n || isNaN(id)) {
+                alert('Entrada inválida');
+                break;
+            }
+            if (id < menorIdade) {
+                menorIdade = id;
+                nomeMenor = n;
+            }
+        }
+        if (nomeMenor) {
+            alert('Pessoa mais nova: ' + nomeMenor + ' (' + menorIdade + ' anos)');
+            document.body.innerHTML += '<p>Pessoa mais nova: ' + nomeMenor + ' (' + menorIdade + ' anos)</p>';
+        }
+    </script>
+</body>
+</html>

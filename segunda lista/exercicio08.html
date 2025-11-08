@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 8</h1>
+    <script>
+        var min = 1212.00;
+        var s = parseFloat(prompt('Digite o valor do seu salário (use ponto ou vírgula):').replace(',','.'));
+        if(isNaN(s)) alert('Entrada inválida');
+        else{var q = s / min; 
+            alert('Você ganha ' + q.toFixed(2) + ' salários mínimos (R$ 1.212,00).'); 
+            document.body.innerHTML += '<p>Você ganha ' + q.toFixed(2) + ' salários mínimos (R$ 1.212,00).</p>'}
+    </script>
+</body>
+</html>
+

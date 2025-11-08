@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 13</h1>
+    <script>
+        var soma=0;
+        for(var i=1;i<=10;i++){
+            var x=parseFloat(prompt('Digite o '+i+'º número:').replace(',','.'));
+            if(isNaN(x)){alert('Entrada inválida');break}
+            soma+=x;
+        }
+        if(!isNaN(soma)){
+            alert('Soma dos 10 números: '+soma);
+            document.body.innerHTML += '<p>Soma dos 10 números: '+soma+'</p>';
+        }
+    </script>
+</body>
+</html>
+

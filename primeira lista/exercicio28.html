@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 28</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 28</h1>
+    <script>
+        let peso = parseFloat(prompt("Digite seu peso: "))
+        let altura = parseFloat(prompt("Digite sua altura: "))
+        let imc = ((peso)/(altura*altura)).toFixed(2)
+         if (imc < 18.5 ){
+            alert("Seu indice de massa corporal é "+ imc +" e Você esta abaixo do peso")
+        }else if (imc >= 18.5 && imc <= 24.9){
+             alert("Seu indice de massa corporal é "+ imc +" e Você esta peso normal")
+        } else if (imc >= 25 && imc <= 29.9){
+             alert("Seu indice de massa corporal é "+ imc +" e Você esta sobre peso")
+        } else if (imc >= 30 && imc <= 34.9){
+             alert("Seu indice de massa corporal é "+ imc +" e Você esta com obesidade grau 1")
+        } else if (imc >= 35 && imc <= 39.9){
+             alert("Seu indice de massa corporal é "+ imc +" e Você esta com obesidade grau 2")
+        } else if (imc >= 40){
+             alert("Seu indice de massa corporal é "+ imc +" e Você esta com obesidade grau 3 morbida")
+        }
+        
+       
+    </script>
+</body>
+</html>

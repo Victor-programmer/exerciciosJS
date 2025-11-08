@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 16</title>
+</head>
+<body>
+    <style>
+        *{margin-left: 15%; font-family: Arial, Helvetica, sans-serif;}
+    </style>
+    <h1>EXERCÍCIO 16</h1>
+    <script>
+        var soma = 0;
+        for (var i = 1; i <= 20; i++) {
+            var x = parseInt(prompt('Digite a idade da ' + i + 'ª pessoa:'));
+            if (isNaN(x)) {
+                alert('Entrada inválida');
+                break;
+            }
+            soma += x;
+        }
+        if (!isNaN(soma)) {
+            var media = soma / 20;
+            alert('Média das idades: ' + media.toFixed(2));
+            document.body.innerHTML += '<p>Média das idades: ' + media.toFixed(2) + '</p>';
+        }
+    </script>
+</body>
+</html>

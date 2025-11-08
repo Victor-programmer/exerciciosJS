@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 4</h1>
+    <script>
+        var a=parseFloat(prompt('A:')),
+        b=parseFloat(prompt('B:')),
+        c=parseFloat(prompt('C:'));
+        if(isNaN(a)||isNaN(b)||isNaN(c))
+        alert('Entrada inválida');
+        else{
+            var v=[a,b,c];
+            v.sort(function(x,y){return y-x});
+            alert('Ordem decrescente: '+v.join(', '));
+            document.body.innerHTML='<p>Ordem decrescente: '+v.join(', ')+'</p>'
+        }
+    </script>
+</body>
+</html>
+

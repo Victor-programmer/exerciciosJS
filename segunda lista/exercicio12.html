@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 12</h1>
+    <script>
+        var c = parseFloat(prompt('Digite a temperatura em Celsius (use ponto ou vírgula):').replace(',','.'));
+        if(isNaN(c)) alert('Entrada inválida');
+        else{
+            var f = (9*c + 160)/5; alert('Temperatura em Fahrenheit: '+f.toFixed(2)+' °F'); document.body.innerHTML += '<p>Temperatura em Fahrenheit: '+f.toFixed(2)+' °F</p>'
+        }
+    </script>
+</body>
+</html>
+

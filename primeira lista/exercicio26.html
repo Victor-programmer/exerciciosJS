@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 26</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 26</h1>
+    <script>
+
+    let codigo = parseInt(prompt("Digite o código do produto (1, 2 ou 3):"));
+    let qtd = parseInt(prompt("Digite a quantidade:"));
+    let preco;
+
+    if(codigo === 1) {
+        preco = 10;
+    } else if(codigo === 2) {
+        preco = 20;
+    } else if(codigo === 3) {
+        preco = 30;
+    } else {
+        preco = 0;
+        alert("Produto inválido!");
+    }
+
+    let total = preco * qtd;
+
+    if(preco !== 0) {
+        alert("O valor total a pagar é: R$" + total);
+    }
+
+    </script>
+</body>
+</html>

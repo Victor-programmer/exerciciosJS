@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 5</h1>
+    <script>
+        let pre = String(prompt("Digite o preço do produto: "))
+        let preco = pre.replace(",",".")
+        let valor = parseFloat(preco)
+        let qnt = parseInt(prompt("Digite a quantidade de vezes que comprou: "))
+        valor = valor*qnt
+        if(qnt > 10){
+            let desconto = (valor*10)/100
+            alert("Você recebeu um desconto de " + desconto.toFixed(2) + " (10%) então ficara "+(valor-desconto).toFixed(2)+" reais")
+        }else{
+            alert("Você não ganhou desconto e ficou "+ valor.toFixed(2)+" reais")
+        }
+    </script>
+</body>
+</html>

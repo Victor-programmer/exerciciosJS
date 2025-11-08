@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 30</h1>
+    <script>
+        let qntd = parseInt(prompt("Digite quantas maçãs você comprou: "))
+        if(qntd < 12){
+            qntd = qntd * 0.50
+        }else if(qntd >= 12){
+            qntd = qntd * 0.40
+        }
+        document.writeln("Você vai pagar um total de "+ qntd.toFixed(2) +" Reais")
+    </script>
+</body>
+</html>
