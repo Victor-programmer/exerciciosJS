@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 14</h1>
+    <script>
+        entreZeroCem = 0
+        entreCemDuzentos = 0
+        maiorDuzentos = 0
+        for(var i = 1;i<=20;i++){
+            var numero = parseInt(prompt("Digite o número " + i + ":"));
+            if(numero >=0 && numero <=100){
+                entreZeroCem = entreZeroCem + 1
+            }else if(numero >100 && numero <=200){
+                entreCemDuzentos = entreCemDuzentos + 1
+            }else{
+                maiorDuzentos = maiorDuzentos + 1
+            }
+        }
+        document.write("A quantidade de números entre 0 e 100 é: " + entreZeroCem + "<br>");
+        document.write("A quantidade de números entre 101 e 200 é: " + entreCemDuzentos + "<br>");
+        document.write("A quantidade de números maiores que 200 é: " + maiorDuzentos);
+    </script>
+</body>
+</html>

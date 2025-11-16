@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 3</title>
+<meta charset="UTF-8">
+<title>Exercício 3</title>
 </head>
 <body>
     <style>
@@ -14,39 +12,18 @@
         }
     </style>
     <h1>EXERCÍCIO 3</h1>
-    <p>Informe três valores para ordenar do maior para o menor:</p>
-    <button onclick="ordenar()">Ordenar</button>
-    <p id="saida" style="font-weight:bold;margin-top:12px;"></p>
-    <script>
-        var entrada = prompt('Digite o saldo médio do cliente (apenas números):');
-        if (entrada === null) {
-        } else {
-            var saldo = parseFloat(entrada.replace(',','.'));
-            if (isNaN(saldo)) {
-                alert('Valor inválido. Digite um número.');
-            } else {
-                var percentual = 0;
-        if (saldo >= 0 && saldo <= 500) percentual = 0.0;
-        else if (saldo <= 1000) percentual = 0.30;
-        else if (saldo <= 3000) percentual = 0.40;
-        else percentual = 0.50;
 
-        var credito = saldo * percentual;
-        var juros = credito * 0.02;
-        var creditoComJuros = credito + juros;
+  <script>
+    var n = prompt("Digite um número:");
+    n = Number(n);
 
-        var mensagem = 'Saldo médio: R$ ' + saldo.toFixed(2) + '\n';
-        if (percentual === 0) {
-            mensagem += 'Nenhum crédito será concedido.';
-        } else {
-            mensagem += 'Percentual aplicado: ' + (percentual*100).toFixed(0) + '%\n';
-            mensagem += 'Valor do crédito: R$ ' + credito.toFixed(2) + '\n';
-            mensagem += 'Valor do crédito com juros de 2%: R$ ' + creditoComJuros.toFixed(2);
-        }
+    if (n % 10 == 0) alert("Divisível por 10");
+    else if (n % 5 == 0) alert("Divisível por 5");
+    else if (n % 2 == 0) alert("Divisível por 2");
+    else alert("Não é divisível por 10, 5 nem 2");
+  </script>
 
-        alert(mensagem);
-        document.body.innerHTML += '<pre>'+mensagem.replace(/\n/g,'\n')+'</pre>';
-    }
-}
-    </script>
 
+
+</body>
+</html>

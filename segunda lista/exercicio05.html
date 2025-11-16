@@ -15,9 +15,8 @@
     <h1>EXERCÍCIO 5</h1>
     <script>
         var i=parseInt(prompt('Digite a idade:'));
-        if(isNaN(i))alert('Entrada inválida');
-        else if(i<16)alert('Não eleitor');
-        else if((i>=16 && i<18) || i>=65)alert('Eleitor facultativo');
+        if(i<16) alert('Não eleitor');
+        else if(i<18 || i>=65) alert('Eleitor facultativo');
         else alert('Eleitor obrigatório');
     </script>
 </body>

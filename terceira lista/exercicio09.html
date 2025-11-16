@@ -14,10 +14,13 @@
     </style>
     <h1>EXERCÍCIO 9</h1>
     <script>
-       var s = parseFloat(prompt('Digite o saldo:'));
-        var r = s * 1.015;
-        alert('Saldo com reajuste: R$ ' + r.toFixed(2));
+        var Maisnova = 100000;
+        for(var i = 1;i<=10;i++){
+            var idade = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
+            Maisnova = Math.min(Maisnova, idade);
+        }
+        document.write("A idade da pessoa mais nova é: " + Maisnova);
+
     </script>
 </body>
 </html>
-

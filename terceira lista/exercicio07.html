@@ -14,12 +14,14 @@
     </style>
     <h1>EXERCÍCIO 7</h1>
     <script>
-        var m1=(8+9+7)/3;
-        var m2=(4+5+6)/3;
-        var soma=m1+m2;
-        var mma=soma/2;
-        alert('Média 1: '+m1+'\nMédia 2: '+m2+'\nSoma: '+soma+'\nMédia das médias: '+mma);
+        var idades = 0
+        var media = 0
+        for(var i = 1;i<=20;i++){
+            idade = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
+            idades = idades + idade;
+            media = idades / 20;
+        }
+        document.write("A média de idade do grupo é: " + media.toFixed(2));
     </script>
 </body>
 </html>
-

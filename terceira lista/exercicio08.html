@@ -14,10 +14,15 @@
     </style>
     <h1>EXERCÍCIO 8</h1>
     <script>
-        var s = prompt('Salário:');
-        var q = parseFloat(s.replace(',','.')) / 1212;
-        alert(q.toFixed(2));
+        idades = 0
+        maior = 0
+        for(var i = 1;i<=20;i++){
+            idade = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
+            if(idade >= 18){
+                maior = maior + 1
+            }
+        }
+        document.write("A quantidade de pessoas maiores de idade é: " + maior);
     </script>
 </body>
 </html>
-

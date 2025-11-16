@@ -14,13 +14,15 @@
     </style>
     <h1>EXERCÍCIO 11</h1>
     <script>
-        var soma=0;
-        for(var i=1;i<=15;i++){
-            soma+=i;
+        MaiorOito = 0
+        for(var i = 1;i<=20;i++){
+            numero = parseInt(prompt("Digite o número " + i + ":"));
+            if(numero > 8){
+                MaiorOito = MaiorOito + 1
+            }
         }
-        alert('Soma dos números de 1 a 15: '+soma);
-        document.write('Soma dos números de 1 a 15: '+soma);
-    </script>
+        document.write("A quantidade de números maiores que 8 é: " + MaiorOito);
+                
+        </script>
 </body>
 </html>
-

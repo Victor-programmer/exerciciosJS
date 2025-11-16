@@ -14,18 +14,16 @@
     </style>
     <h1>EXERCÍCIO 4</h1>
     <script>
-        var a=parseFloat(prompt('A:')),
-        b=parseFloat(prompt('B:')),
-        c=parseFloat(prompt('C:'));
-        if(isNaN(a)||isNaN(b)||isNaN(c))
-        alert('Entrada inválida');
-        else{
-            var v=[a,b,c];
-            v.sort(function(x,y){return y-x});
-            alert('Ordem decrescente: '+v.join(', '));
-            document.body.innerHTML='<p>Ordem decrescente: '+v.join(', ')+'</p>'
-        }
+        var a = parseFloat(prompt("A:"));
+        var b = parseFloat(prompt("B:"));
+        var c = parseFloat(prompt("C:"));
+
+        var v = [a, b, c];
+        v.sort((x, y) => y - x);
+
+        alert("Ordem decrescente: " + v.join(", "));
     </script>
+
 </body>
 </html>
 

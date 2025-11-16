@@ -14,10 +14,15 @@
     </style>
     <h1>EXERCÍCIO 12</h1>
     <script>
-       var c = parseFloat(prompt('Celsius:'));
-        var f = (9*c + 160)/5;
-        alert('Fahrenheit: ' + f);
-    </script>
+        qntdPares = 0
+        for(var i = 1;i<=20;i++){
+            var numero = parseInt(prompt("Digite o número " + i + ":"));
+            if(numero % 2 == 0){
+                
+                qntdPares = qntdPares + 1
+            }
+        }
+        document.write("A quantidade de números pares é: " + qntdPares); 
+        </script>
 </body>
 </html>
-

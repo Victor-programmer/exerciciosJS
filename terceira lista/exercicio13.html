@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>EXERCÍCIO 13</h1>
+    <script>
+        Entre = 0
+        for(var i = 1;i<=20;i++){
+            var numero = parseInt(prompt("Digite o número " + i + ":"));
+            if(numero >=0 && numero <=100){
+                Entre = Entre + 1
+            }
+        }
+        document.write("A quantidade de números entre 0 e 100 é: " + Entre);
+    </script>
+</body>
+</html>
