@@ -10,20 +10,13 @@
         *{margin-left: 15%; font-family: Arial, Helvetica, sans-serif;}
     </style>
     <h1>EXERCÍCIO 20</h1>
-    <script>
-        var cont = 0;
-        for (var i = 1; i <= 20; i++) {
-            var x = parseFloat(prompt('Digite o ' + i + 'º número:').replace(',','.'));
-            if (isNaN(x)) {
-                alert('Entrada inválida');
-                break;
-            }
-            if (x > 8) cont++;
-        }
-        if (!isNaN(cont)) {
-            alert('Quantidade de números maiores que 8: ' + cont);
-            document.body.innerHTML += '<p>Quantidade de números maiores que 8: ' + cont + '</p>';
-        }
-    </script>
+<script>
+    var cont = 0;
+    for (var i = 1; i <= 20; i++) {
+        var x = parseFloat(prompt('Digite o ' + i + 'º número:'));
+        if (x > 8) cont++;
+    }
+    alert('Quantidade de números maiores que 8: ' + cont);
+</script>
 </body>
 </html>

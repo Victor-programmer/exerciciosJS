@@ -14,16 +14,13 @@
     </style>
     <h1>EXERCÍCIO 13</h1>
     <script>
-        var soma=0;
-        for(var i=1;i<=10;i++){
-            var x=parseFloat(prompt('Digite o '+i+'º número:').replace(',','.'));
-            if(isNaN(x)){alert('Entrada inválida');break}
-            soma+=x;
-        }
-        if(!isNaN(soma)){
-            alert('Soma dos 10 números: '+soma);
-            document.body.innerHTML += '<p>Soma dos 10 números: '+soma+'</p>';
-        }
+    var soma = 0;
+    for (var i = 1; i <= 10; i++) {
+        var x = Number(prompt("Digite o " + i + "º número:").replace(",", "."));
+        soma += x;
+    }
+    alert("Soma dos 10 números: " + soma);
+    document.body.innerHTML += "<p>Soma dos 10 números: " + soma + "</p>";
     </script>
 </body>
 </html>

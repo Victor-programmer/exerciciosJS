@@ -10,15 +10,10 @@
         *{margin-left: 15%; font-family: Arial, Helvetica, sans-serif;}
     </style>
     <h1>EXERCÍCIO 21</h1>
-    <script>
-        var valor = parseFloat(prompt('Digite o valor da compra:').replace(',','.'));
-        if (isNaN(valor)) {
-            alert('Entrada inválida');
-        } else {
-            var parcela = valor / 5;
-            alert('Valor da prestação (5x sem juros): R$ ' + parcela.toFixed(2));
-            document.body.innerHTML += '<p>Valor da prestação (5x sem juros): R$ ' + parcela.toFixed(2) + '</p>';
-        }
+<script>
+     var valor = parseFloat(prompt('Digite o valor da compra:'));
+    var parcela = valor / 5;
+    alert('Prestação (5x sem juros): R$ ' + parcela.toFixed(2));
     </script>
 </body>
 </html>

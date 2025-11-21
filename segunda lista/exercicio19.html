@@ -11,15 +11,10 @@
     </style>
     <h1>EXERCÍCIO 19</h1>
     <script>
-        var cot = parseFloat(prompt('Digite a cotação do dólar (R$):').replace(',','.'));
-        var qtd = parseFloat(prompt('Digite a quantidade de dólares:').replace(',','.'));
-        if (isNaN(cot) || isNaN(qtd)) {
-            alert('Entrada inválida');
-        } else {
-            var total = cot * qtd;
-            alert('Valor em reais: R$ ' + total.toFixed(2));
-            document.body.innerHTML += '<p>Valor em reais: R$ ' + total.toFixed(2) + '</p>';
-        }
+    var cot = parseFloat(prompt('Digite a cotação do dólar (R$):'));
+    var qtd = parseFloat(prompt('Digite a quantidade de dólares:'));
+    var total = cot * qtd;
+    alert('Valor em reais: R$ ' + total.toFixed(2));
     </script>
 </body>
 </html>

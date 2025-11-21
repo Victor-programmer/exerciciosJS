@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+exerc<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 3</title>
+    <title>Exercicio 1</title>
 </head>
 <body>
     <style>
@@ -12,16 +12,18 @@
             font-family: Arial, Helvetica, sans-serif;
         }
     </style>
-    <h1>EXERCÍCIO 3</h1>
+    <h1>EXERCÍCIO 40</h1>
     <script>
-        var i = 1;
-        while( i < 51 ){
-            if( i % 2 == 0 ){
-                document.write(i + '<br>');
-            }
-            i++;
+        let a = 0;
+        let b = 1;
+        let c = a + b;
+        for(let i = 1; i <= 20; i++){
+            document.write(a + "<br>");
+            a = b;
+            b = c;
+            c = a + b;
         }
-        
     </script>
 </body>
 </html>
+

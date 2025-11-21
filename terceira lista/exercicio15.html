@@ -14,14 +14,20 @@
     </style>
     <h1>EXERCÍCIO 15</h1>
     <script>
+        let nome;
+        let idade =0;
+        let soma = 0;
+        let i = 0;
         while(true){
-            var numero = parseInt(prompt("Digite um número inteiro positivo (ou um número negativo para sair):"));
-            if(numero < 0){
+            nome = prompt("Digite seu nome (ou 'fim' para encerrar): ");
+            if(nome.toLowerCase() === 'fim'){
                 break;
             }
-            var soma = numero + numero;
+            idade = parseInt(prompt("Digite sua idade: "));
+            soma = idade + soma;
+            i++;
         }
-        document.write("a soma dos números digitados é:" + soma);
+        document.write("a media das idades é: " + (soma/i));
     </script>
 </body>
 </html>

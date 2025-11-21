@@ -14,14 +14,13 @@
     </style>
     <h1>EXERCÍCIO 13</h1>
     <script>
-        Entre = 0
-        for(var i = 1;i<=20;i++){
-            var numero = parseInt(prompt("Digite o número " + i + ":"));
-            if(numero >=0 && numero <=100){
-                Entre = Entre + 1
-            }
-        }
-        document.write("A quantidade de números entre 0 e 100 é: " + Entre);
+       let numero = parseInt(prompt("Digite um número inteiro positivo: "));
+       let numeroDigitado = String(numero);
+       let i = 0;
+       while(i < numeroDigitado.length){
+            document.write(numeroDigitado[i] + '<br>');
+            i++;
+       }
     </script>
 </body>
 </html>

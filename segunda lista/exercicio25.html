@@ -11,21 +11,14 @@
     </style>
     <h1>EXERCÍCIO 25</h1>
     <script>
-        var maior = -Infinity;
-        var menor = Infinity;
-        for (var i = 1; i <= 10; i++) {
-            var n = parseFloat(prompt('Digite o ' + i + 'º número:').replace(',','.'));
-            if (isNaN(n)) {
-                alert('Entrada inválida');
-                break;
-            }
-            if (n > maior) maior = n;
-            if (n < menor) menor = n;
-        }
-        if (isFinite(maior)) {
-            alert('Maior: ' + maior + '\nMenor: ' + menor);
-            document.body.innerHTML += '<p>Maior: ' + maior + '</p><p>Menor: ' + menor + '</p>';
-        }
+    var maior = -100000;
+    var menor = 100000;
+    for (var i = 1; i <= 10; i++) {
+        var n = parseFloat(prompt('Número ' + i + ':'));
+        if (n > maior) maior = n;
+        if (n < menor) menor = n;
+    }
+    alert('Maior: ' + maior + '\nMenor: ' + menor);
     </script>
 </body>
 </html>

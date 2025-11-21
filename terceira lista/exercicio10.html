@@ -14,11 +14,17 @@
     </style>
     <h1>EXERCÍCIO 10</h1>
     <script>
-        numero = parseInt(prompt("Digite um número inteiro positivo:"));
-        for(var i = 1;i<=numero;i++){
-            
-            document.write( numero + " X " + i+" = "+ (numero*i) + "<br>");
+        let i = 0;
+        let a = 0;
+        let b = 1;
+        let c = a + b;
+        while(i < 20){
+            document.write(a + '<br>');
+            a = b;
+            b = c;
+            c = a + b;
+            i++;
         }
-            </script>
+        </script>
 </body>
 </html>

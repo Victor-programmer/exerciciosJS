@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 9</title>
+    <title>Exercicio 1</title>
 </head>
 <body>
     <style>
@@ -12,18 +12,16 @@
             font-family: Arial, Helvetica, sans-serif;
         }
     </style>
-    <h1>EXERCÍCIO 9</h1>
+    <h1>EXERCÍCIO 20</h1>
     <script>
-        let i = 0
-        let idades = 0
-        while(i<5){
-            let idade =parseInt(prompt("Digite sua idade: "));
-            idades = idades + idade
+        let i = 1;
+        let numero = parseInt(prompt("Digite um número inteiro: "));
+        do{
+            document.write("" + numero + " x " + i + " = " + (numero * i) + "<br>");
             i++;
         }
-        document.write("A média das idades é: " + (idades/5));
-            
-
+        while(i <= 10);
     </script>
 </body>
 </html>
+

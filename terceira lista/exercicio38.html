@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 8</title>
+    <title>Exercicio 1</title>
 </head>
 <body>
     <style>
@@ -12,19 +12,19 @@
             font-family: Arial, Helvetica, sans-serif;
         }
     </style>
-    <h1>EXERCÍCIO 8</h1>
+    <h1>EXERCÍCIO 38</h1>
     <script>
-        var n = parseInt(prompt("Digite um numero inteiro: "));
-        var i = 0;
-        var a = 1
-        var b = 2
-        while(i< n){
-            document.write(a+'<br>');
-            var c = a + b;
+        let numero = parseInt(prompt("Digite um número inteiro positivo:"));
+        let a = 0;
+        let b = 1;
+        let c = a + b;
+        for(let i = 1; i <= numero; i++){
+            document.write(a + "<br>");
             a = b;
             b = c;
-            i++;
+            c = a + b;
         }
     </script>
 </body>
 </html>
+

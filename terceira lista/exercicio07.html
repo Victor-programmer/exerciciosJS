@@ -14,14 +14,18 @@
     </style>
     <h1>EXERCÍCIO 7</h1>
     <script>
-        var idades = 0
-        var media = 0
-        for(var i = 1;i<=20;i++){
-            idade = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
-            idades = idades + idade;
-            media = idades / 20;
+        var n = parseInt(prompt("Digite um número:"));
+        var i = 2;
+        var primo = true;
+        while (i < n) {
+            if (n % i == 0) {
+                primo = false;
+                break;
+            }
+            i++;
         }
-        document.write("A média de idade do grupo é: " + media.toFixed(2));
+        if (n <= 1) primo = false;
+        document.write(primo ? n + " é primo" : n + " não é primo");
     </script>
 </body>
 </html>
